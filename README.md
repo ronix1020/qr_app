@@ -1,16 +1,13 @@
 # qr_scanner
 
-A new Flutter project.
+Una pequeña aplicacion en donde intento aprender las funcionalidades de un provider, manejo de sqlite, lectura de codigos qr como tambien mostrar los resultados de dichos codigos
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Para iniciar en este mundillo, entra a los siguientes enlaces
 
-A few resources to get you started if this is your first Flutter project:
+- [Lab: Escribe tu primera app en Flutter](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Ejemplos de Flutter útiles](https://flutter.dev/docs/cookbook)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Para más información sobre widgets, estructuras, paquetes y demas:
+[documentacion en linea](https://flutter.dev/docs).
