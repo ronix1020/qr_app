@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:qr_scanner/pages/direcciones_page.dart';
 import 'package:qr_scanner/pages/widgets/custom_navigatorbar.dart';
 import 'package:qr_scanner/pages/widgets/scan_button.dart';
+import 'package:qr_scanner/providers/db_provider.dart';
 import 'package:qr_scanner/providers/ui_provider.dart';
 
 import 'mapas_page.dart';
@@ -25,27 +26,27 @@ class HomePage extends StatelessWidget {
   }
 }
 
-
 class _HomePageBody extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-
     //obtener el selected menu opt
     final uiprovider = Provider.of<UiProvider>(context);
-    
+
     final currentIndex = uiprovider.selectedMenuOpt;
 
-    switch( currentIndex ) {
+    // TODO: Temporal leer la base de datos
+    // final tempScan = new ScanModel(valor: 'http://www.google.com');
+    // DBProvider.db.nuevoScan(tempScan);
+
+    switch (currentIndex) {
       case 0:
-      return MapasPage();
+        return MapasPage();
 
       case 1:
-      return DireccionesPage();
-      
-      default: MapasPage();
-    }
+        return DireccionesPage();
 
-    
+      default:
+        MapasPage();
+    }
   }
 }
